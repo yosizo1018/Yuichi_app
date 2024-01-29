@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 
 #データ分析関連
-df = pd.read_csv('./data/過去実績.csv', index_col='月')
-dff = pd.read_csv('./data/ビール杯数過去実績.csv', index_col='月')
+df = pd.read_csv('./data/achievement.csv', index_col='月')
+dff = pd.read_csv('./data/number_of_beers.csv', index_col='月')
 st.text('【過去の月ごとの飲み会回数実績】')
 st.dataframe(df)
 # st.table(df)
